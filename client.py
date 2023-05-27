@@ -7,7 +7,7 @@ clientSocket = socket(AF_INET, SOCK_STREAM) #inisiasi socket sebagai objek
 
 serverAddress = '127.0.0.1' #alamat server
 serverPort = 23489 #nomor port
-filename = 'index.html' #nama file yang akan di request ke server
+filename = input("Nama File yang Dicari : ") #input nama file yang akan di request ke server
 server = (serverAddress, serverPort) # server ip dan port dijadiin tupel dimasukkan ke server
 clientSocket.connect(server) #mencari koneksi ke server dengan alamat dan port yang telah ditentukan
 
